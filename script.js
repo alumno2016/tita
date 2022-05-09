@@ -1,4 +1,4 @@
-import images from "/portfolio.json" assert {type: 'json'};
+import images from "/portfolio.json" assert {type: "json"};
 import sheet from "/style.css" assert { type: "css" };
 document.adoptedStyleSheets = [sheet];
 
@@ -6,12 +6,12 @@ document.adoptedStyleSheets = [sheet];
 
 var fimg = images.images
 
-var nuevo = fimg.map(function(item, i){
-    var nitem = {}
-    nitem[item.url] = item.url
-    /* console.log(item) */
-    return nitem
-})
+var nuevo = fimg.map((item, i) => {
+        var nitem = {};
+        nitem[item.url] = item.url;
+        /* console.log(item) */
+        return nitem;
+    })
 
 
 var obj = fimg
